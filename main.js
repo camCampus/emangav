@@ -31,7 +31,6 @@ function scroolSlider(e) {
         end: "+=300 center",
         scrub: 0.6,
         once: true,
-        markers: true,
       },
     });
     tl.from("#gsap-box-master", {
