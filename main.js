@@ -43,6 +43,7 @@ function scroolSlider(e) {
     console.log("mobile / tablette");
 
     gourde.forEach((element) => {
+      element.style.opacity = 0;
       element.classList.remove("gourde_hover", "gourde_max_w");
       element.classList.add("mt-3");
     });
@@ -50,6 +51,29 @@ function scroolSlider(e) {
     cardInfo.forEach((e) => {
       e.classList.remove("info-card");
       e.classList.add("info-card_no_hover");
+    });
+
+    let gl = gsap.timeline({
+      defaults:{
+        ease:"bounce",
+      },
+      scrollTrigger: {
+        trigger: "#gsap-box-master",
+        start: "top bottom",
+        end: "+=3000 center",
+        markers: true,
+        scrub: 0.6,
+        once: true,
+      },
+    });
+    gourde.forEach((g) => {
+      gl.to(g, {
+        opacity: 1,
+        scale: 1.5,
+      });
+      gl.to(g, {
+        scale:1
+      })
     });
   }
 }
