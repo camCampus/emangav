@@ -61,7 +61,6 @@ function scroolSlider(e) {
         trigger: "#gsap-box-master",
         start: "top bottom",
         end: "+=3000 center",
-        markers: true,
         scrub: 0.6,
         once: true,
       },
