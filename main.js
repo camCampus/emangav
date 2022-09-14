@@ -19,6 +19,7 @@ function scroolSlider(e) {
     gourde.forEach((element) => {
       element.classList.add("gourde_hover", "gourde_max_w");
     });
+
     cardInfo.forEach((e) => {
       e.classList.remove("info-card_no_hover");
       e.classList.add("info-card");
@@ -33,25 +34,16 @@ function scroolSlider(e) {
         once: true,
       },
     });
+
     tl.from("#gsap-box-master", {
       xPercent: 100,
     });
     tl.from("#gsap-box-two", {
       xPercent: -100,
     });
+    
   } else {
     console.log("mobile / tablette");
-
-    gourde.forEach((element) => {
-      element.style.opacity = 0;
-      element.classList.remove("gourde_hover", "gourde_max_w");
-      element.classList.add("mt-3");
-    });
-
-    cardInfo.forEach((e) => {
-      e.classList.remove("info-card");
-      e.classList.add("info-card_no_hover");
-    });
 
     let gl = gsap.timeline({
       defaults:{
@@ -65,15 +57,27 @@ function scroolSlider(e) {
         once: true,
       },
     });
-    gourde.forEach((g) => {
-      gl.to(g, {
+
+    gourde.forEach((element) => {
+      element.style.opacity = 0;
+      element.classList.remove("gourde_hover", "gourde_max_w");
+      element.classList.add("mt-3");
+
+      gl.to(element, {
         opacity: 1,
         scale: 1.5,
       });
-      gl.to(g, {
+      gl.to(element, {
         scale:1
       })
     });
+
+    cardInfo.forEach((e) => {
+      e.classList.remove("info-card");
+      e.classList.add("info-card_no_hover");
+    });
+
+
   }
 }
 
