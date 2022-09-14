@@ -1,0 +1,180 @@
+// Import all of Bootstrap's CSS
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* VARIABLE -------------------------------------------------------------*/
+$neon-pink: rgb(255, 36, 244);
+$font: Montserrat;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(225, 231, 247);
+  height: 200vh;
+}
+
+/* TEXT --------------------------------------------------------------- */
+
+.p-police {
+  font-family: $font;
+}
+
+/* SEPARATOR ----------------------------------------------------------- */
+
+.separator {
+    height: 10vh;
+}
+
+/* NAVBAR -------------------------------------------------------------*/
+
+.bi-search {
+  color: black;
+}
+#search-btn {
+  &:hover {
+    background-color: #219be4;
+  }
+}
+#search-nav {
+  border-radius: 15px;
+  &:focus {
+    border: 1px solid;
+    border-color: black;
+    box-shadow: none;
+  }
+}
+
+/* FIRST SECTION ---------------------------------------------------------------- */
+
+.banniere-section {
+  min-height: 70vh;
+  background: url("./img/fondbanniere.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.ban-txt {
+  color: #ff9900;
+  text-shadow: 4px 4px 0 #ffffff, 4px -4px 0 #ffffff, -4px 4px 0 #ffffff,
+    -4px -4px 0 #ffffff, 4px 0px 0 #ffffff, 0px 4px 0 #ffffff,
+    -4px 0px 0 #ffffff, 0px -4px 0 #ffffff, 0px 0px 0px rgba(255, 255, 255, 0);
+  font-size: calc(4vw + 1rem);
+}
+
+
+/* SECOND SECTION ---------------------------------------------------------------------------*/
+.second-img-section {
+    min-height: 40vh;
+    width: 100%;
+
+  .gourde {
+    height: 100%;
+    max-height: 300px;
+    width: 60%;
+    min-width: 130px;
+    position: relative;
+    transition: 0.4s ease-out;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 25px;
+
+    .info-card {
+        position: absolute;
+        padding: 0;
+        bottom: 0;
+        width: 100%;
+        height: fit-content;
+        color: white;
+        border-radius:0 0 25px 25px ;
+        transition: 0.4s ease-out;
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+  }
+
+  .gourde_hover {
+
+    &:hover {
+      transform: scale(1.1);
+      .info-card {
+          opacity: 1;
+          transform: translateY(0);
+          background-color: rgba(0,0,0,0.8);
+      }
+  }
+  }
+
+  .gourde_max_w {
+    max-width: 300px;
+  }
+
+  .info-card_no_hover {
+    position: absolute;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    color: white;
+    border-radius:0 0 25px 25px ;
+    opacity: 1;
+    transform: translateY(0);
+    background-color: rgba(0,0,0,0.8);
+  }
+}
+
+
+/* THIRD SECTION --------------------------------------------------------------*/
+
+.third-galerie-section {
+    height: 30vh;
+
+    div {
+        height: 80%;
+        width: 25%;
+        font-size: calc(2vw + 1rem);
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    
+    .galerie-1 {
+        background: linear-gradient(270deg, #7338AC 0%, #219BE4 100%);
+    }
+    .galerie-2 {
+        background: #7338AC;
+    }
+    .galerie-3 {
+        background: linear-gradient(90deg, #7338AC 0%, #219BE4 100%);
+    }
+}
+
+/* FOOTER ------------------------------------------------------------------*/
+
+.footer-height {
+  min-height: fit-content;
+
+  ul {
+    min-width: 120px;
+    padding: 10px;
+  }
+  .footer-list {
+    background-color: transparent;
+    border: none;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "emangav",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.1",
+    "bootstrap-icons": "^1.9.1",
+    "gsap": "^3.11.1",
+    "sass": "^1.54.9",
+    "vite": "^3.1.0"
+  }
+}

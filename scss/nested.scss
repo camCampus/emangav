@@ -1,0 +1,32 @@
+$theme-colors: (
+    "dark":#212529
+
+);
+
+
+
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* VARIABLE -------------------------------------------------------------*/
+$neon-pink: rgb(255, 36, 244);
+$font: Montserrat;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font;
+}
+.blop {
+    height: 91.5vh;
+}
+.back-left {
+    background-color: #1DE9B6;
+}
+.back-right {
+    background-color: #1A237E;
+}
