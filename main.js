@@ -10,7 +10,7 @@ let gourde = document.querySelectorAll(".gourde");
 let cardInfo = document.querySelectorAll(".info-card");
 
 let w = window.matchMedia("(min-width: 992px)");
-console.log("hello");
+
 
 function scroolSlider(e) {
   if (e.matches) {
