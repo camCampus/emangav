@@ -11,8 +11,8 @@
 </head>
 <body>
 <!--  NAVBAR SECTION --------------------------------------- -->
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+
     <a class="navbar-brand order-1" href="#">
         <img src="./img/th-109666156.png" width="60" height="60" alt="Logo du site emanga"/>
         <img src="./img/emanga.svg"
@@ -20,10 +20,6 @@
              width="150"
              height="40"/>
     </a>
-    <button class="navbar-toggler  order-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
     <form class="d-flex align-self-center order-2 flex-grow-2" role="search">
         <input
                 id="search-nav"
@@ -40,19 +36,26 @@
             <i class="bi bi-search"></i>
         </button>
     </form>
-    <div class="collapse navbar-collapse order-3" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">
-                    <i class="bi bi-cart m-2 text-dark fs-5"></i>
-                    <span class="sr-only">Panier</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="bi bi-person-lines-fill m-2 text-dark fs-5"></i>
-                    <span class="sr-only">Connexion</span> </a>
-            </li>
-        </ul>
+    <div class="container col-3 order-1 justify-content-center">
+        <button class="navbar-toggler collapsed " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse order-3" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link active" href="./index.html">
+                        <i class="bi bi-cart m-2 text-dark fs-5"></i>
+                        <span class="sr-only">Panier</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./nested/index.html">
+                        <i class="bi bi-person-lines-fill m-2 text-dark fs-5"></i>
+                        <span class="sr-only">Connexion</span> </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 
@@ -305,6 +308,6 @@
         </div>
     </div>
 </footer>
-<script type="module" src="./main.js"></script>
+<script type="module" src="./js/main.js"></script>
 </body>
 </html>
