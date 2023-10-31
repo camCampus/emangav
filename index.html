@@ -1,330 +1,310 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Emanga site de vente et d'achat de manga d'occasion. En lot ou a l'unité vient saisir les meilleurs occasions manga du web">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description"
+          content="Emanga site de vente et d'achat de manga d'occasion. En lot ou a l'unité vient saisir les meilleurs occasions manga du web">
     <title>eManga</title>
-    <link rel="icon" type="image/x-icon" href="./img/th-109666156.png" />
-  </head>
-  <body>
-    <!--  NAVBAR SECTION --------------------------------------- -->
+    <link rel="icon" type="image/x-icon" href="./img/th-109666156.png"/>
+</head>
+<body>
+<!--  NAVBAR SECTION --------------------------------------- -->
 
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./img/th-109666156.png" width="60" height="60" alt="Logo du site emanga" />
-          <img
-            src="./img/emanga.svg"
-            alt="Logo du site eManga"
-            width="150"
-            height="40"
-        /></a>
-
-        <form class="d-flex" role="search">
-          <input
-            id="search-nav"
-            class="form-control me-2"
-            type="search"
-            placeholder="Recherche"
-            aria-label="Search"
-          />
-          <button
-            id="search-btn"
-            class="btn btn-outline-dark rounded-circle"
-            type="submit"
-            name="recherche"
-          >
+<nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+    <a class="navbar-brand order-1" href="#">
+        <img src="./img/th-109666156.png" width="60" height="60" alt="Logo du site emanga"/>
+        <img src="./img/emanga.svg"
+             alt="Logo du site eManga"
+             width="150"
+             height="40"/>
+    </a>
+    <button class="navbar-toggler  order-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <form class="d-flex align-self-center order-2 flex-grow-2" role="search">
+        <input
+                id="search-nav"
+                class="form-control me-2"
+                type="search"
+                placeholder="Recherche"
+                aria-label="Search"
+        />
+        <button
+                id="search-btn"
+                class="btn btn-outline-dark rounded-circle"
+                type="submit"
+                name="recherche">
             <i class="bi bi-search"></i>
-          </button>
-        </form>
+        </button>
+    </form>
+    <div class="collapse navbar-collapse order-3" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">
+                    <i class="bi bi-cart m-2 text-dark fs-5"></i>
+                    <span class="sr-only">Panier</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="bi bi-person-lines-fill m-2 text-dark fs-5"></i>
+                    <span class="sr-only">Connexion</span> </a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
+<!--  FIRST BANNIERE SECTION ------------------------------------- -->
 
-
-          <div class="navbar-nav">
-            <a class=" text-dark fs-6 m-2" href="#"
-              ><i class="bi bi-cart m-2 text-dark fs-5"></i>Panier</a
-            >
-            <a class=" text-dark fs-6 m-2" href="../nested/index.html"
-              ><i class="bi bi-person-lines-fill m-2 text-dark fs-5"></i>Se
-              connecter</a
-            >
-
-          </div>
-
-      </div>
-    </nav>
-
-
-    <!--  FIRST BANNIERE SECTION ------------------------------------- -->
-
-    <div class="container d-flex justify-content-center align-items-center">
-      <p class="p-police fw-semibold fst-italic fs-3 mt-4">
+<div class="container d-flex justify-content-center align-items-center">
+    <p class="p-police fw-semibold fst-italic fs-3 mt-4">
         Ton site de vente et d'achat de manga d'occasion
-      </p>
-    </div>
+    </p>
+</div>
+<div
+        class="container-fluid banniere-section p-0 d-flex justify-content-center mt-4"
+>
     <div
-      class="container-fluid banniere-section p-0 d-flex justify-content-center mt-4"
+            class="row d-flex justify-content-center align-items-center text-center"
     >
-      <div
-        class="row d-flex justify-content-center align-items-center text-center"
-      >
         <div class="col-12 col-lg-6 ban-txt-section m-0 p-1">
-          <p class="ban-txt p-police fw-bold m-2">
-            EN LOT <br />
-            OU <br />
-            A L'UNITÉ
-          </p>
+            <p class="ban-txt p-police fw-bold m-2">
+                EN LOT <br/>
+                OU <br/>
+                A L'UNITÉ
+            </p>
         </div>
         <div
-          class="col-12 col-lg-6 ban-txt-section m-0 p-1 d-flex justify-content-center align-items-center"
+                class="col-12 col-lg-6 ban-txt-section m-0 p-1 d-flex justify-content-center align-items-center"
         >
-          <img class="img-fluid m-2" height="400" width="700" src="./img/Group 14.png" alt="Plusieurs couvertures de mangas " />
+            <img class="img-fluid m-2" height="400" width="700" src="./img/Group 14.png"
+                 alt="Plusieurs couvertures de mangas "/>
         </div>
-      </div>
     </div>
-
-    <!--  SECOND SECTION -----------------------------------  -->
-    <div class="separator container-fluid"></div>
-    <div
-      class="container-fluid d-flex justify-content-center align-items-center"
-    >
-      <p class="p-police fw-semibold fst-italic fs-3 mt-4">
+</div>
+<!--  SECOND SECTION -----------------------------------  -->
+<div class="separator container-fluid"></div>
+<div class="container-fluid d-flex justify-content-center align-items-center">
+    <p class="p-police fw-semibold fst-italic fs-3 mt-4">
         Les dernières annonces
-      </p>
-    </div>
+    </p>
+</div>
 
-    <div id="gsap-box-master" class="container-fluid d-flex m-0 p-0 mt-4 mb-4">
-      <div class="row m-0 p-0 second-img-section d-flex justify-content-around">
+<div id="gsap-box-master" class="container-fluid d-flex m-0 p-0 mt-4 mb-4">
+    <div class="row m-0 p-0 second-img-section d-flex justify-content-around">
         <div id="box-width" class="col-12 col-lg-3 gourde">
-          <img src="./img/stone.webp" height="300" width="300" alt="Couverture de dr stone" />
-          <div class="info-card">
-            <p class="text-center mt-2 p-police fw-bold fs-5">
-              Dr Stone <br />
-              tome.4 <br />
-              2.95€
-            </p>
-          </div>
+            <img src="./img/stone.webp" height="300" width="300" alt="Couverture de dr stone"/>
+            <div class="info-card">
+                <p class="text-center mt-2 p-police fw-bold fs-5">
+                    Dr Stone <br/>
+                    tome.4 <br/>
+                    2.95€
+                </p>
+            </div>
         </div>
         <div class="col-12 col-lg-3 gourde">
-          <img src="./img/gto.webp" alt="Couverture de gto" height="300" width="300"/>
-          <div class="info-card">
-            <p class="text-center mt-2 p-police fw-bold fs-5">
-              Gto <br />
-              tome.12 <br />
-              1.95€
-            </p>
-          </div>
+            <img src="./img/gto.webp" alt="Couverture de gto" height="300" width="300"/>
+            <div class="info-card">
+                <p class="text-center mt-2 p-police fw-bold fs-5">
+                    Gto <br/>
+                    tome.12 <br/>
+                    1.95€
+                </p>
+            </div>
         </div>
         <div class="col-12 col-lg-3 gourde">
-          <img src="./img/shaman-king-.webp" alt="Couverture de shaman King" height="300" width="300"/>
-          <div class="info-card">
-            <p class="text-center mt-2 p-police fw-bold fs-5">
-              Shaman King <br />
-              tome.1 <br />
-              4.99€
-            </p>
-          </div>
+            <img src="./img/shaman-king-.webp" alt="Couverture de shaman King" height="300" width="300"/>
+            <div class="info-card">
+                <p class="text-center mt-2 p-police fw-bold fs-5">
+                    Shaman King <br/>
+                    tome.1 <br/>
+                    4.99€
+                </p>
+            </div>
         </div>
         <div class="col-12 col-lg-3 gourde">
-          <img src="./img/one.webp" alt="Couverture de one piece" height="300" width="300"/>
-          <div class="info-card">
-            <p class="text-center mt-2 p-police fw-bold fs-5">
-              One piece <br />
-              tome.43 <br />
-              3.5€
-            </p>
-          </div>
+            <img src="./img/one.webp" alt="Couverture de one piece" height="300" width="300"/>
+            <div class="info-card">
+                <p class="text-center mt-2 p-police fw-bold fs-5">
+                    One piece <br/>
+                    tome.43 <br/>
+                    3.5€
+                </p>
+            </div>
         </div>
         <div class="col-12 col-lg-3 gourde">
-          <img src="./img/sun-ken-rock_artwork_5.webp" alt="Couverture de sunkenrock" height="300" width="300"/>
-          <div class="info-card">
-            <p class="text-center mt-2 p-police fw-bold fs-5">
-              Sun ken-rock <br />
-              tome.4 <br />
-              2.95€
-            </p>
-          </div>
+            <img src="./img/sun-ken-rock_artwork_5.webp" alt="Couverture de sunkenrock" height="300" width="300"/>
+            <div class="info-card">
+                <p class="text-center mt-2 p-police fw-bold fs-5">
+                    Sun ken-rock <br/>
+                    tome.4 <br/>
+                    2.95€
+                </p>
+            </div>
         </div>
-      </div>
     </div>
-    <div id="gsap-box-two" class="container-fluid d-flex m-0 p-0 mt-4 mb-4">
-      <div class="row m-0 p-0 second-img-section d-flex justify-content-around">
+</div>
+<div id="gsap-box-two" class="container-fluid d-flex m-0 p-0 mt-4 mb-4">
+    <div class="row m-0 p-0 second-img-section d-flex justify-content-around">
         <div id="box-width" class="col-12 col-lg-3 gourde">
-          <img src="./img/tg.webp" alt="Couverture de tokio ghoul" height="300" width="300"/>
-          <div class="info-card">
-            <p class="text-center mt-2 p-police fw-bold fs-5">
-              Tokio ghoul <br />
-              tome.4 <br />
-              2.95€
-            </p>
-          </div>
+            <img src="./img/tg.webp" alt="Couverture de tokio ghoul" height="300" width="300"/>
+            <div class="info-card">
+                <p class="text-center mt-2 p-police fw-bold fs-5">
+                    Tokio ghoul <br/>
+                    tome.4 <br/>
+                    2.95€
+                </p>
+            </div>
         </div>
         <div class="col-12 col-lg-3 gourde">
-          <img src="./img/bleach.webp" alt="Couverture de bleach" height="300" width="300"/>
-          <div class="info-card">
-            <p class="text-center mt-2 p-police fw-bold fs-5">
-              Bleach <br />
-              tome.7 <br />
-              20.95€
-            </p>
-          </div>
+            <img src="./img/bleach.webp" alt="Couverture de bleach" height="300" width="300"/>
+            <div class="info-card">
+                <p class="text-center mt-2 p-police fw-bold fs-5">
+                    Bleach <br/>
+                    tome.7 <br/>
+                    20.95€
+                </p>
+            </div>
         </div>
         <div class="col-12 col-lg-3 gourde">
-          <img src="./img/rad.webp" alt="Couverture de radiant" height="300" width="300"/>
-          <div class="info-card">
-            <p class="text-center mt-2 p-police fw-bold fs-5">
-              Radiant <br />
-              tome.2 <br />
-              4.99€
-            </p>
-          </div>
+            <img src="./img/rad.webp" alt="Couverture de radiant" height="300" width="300"/>
+            <div class="info-card">
+                <p class="text-center mt-2 p-police fw-bold fs-5">
+                    Radiant <br/>
+                    tome.2 <br/>
+                    4.99€
+                </p>
+            </div>
         </div>
         <div class="col-12 col-lg-3 gourde">
-          <img src="./img/ju.webp" alt="Couverture de jujustu kaisen" height="300" width="300"/>
-          <div class="info-card">
-            <p class="text-center mt-2 p-police fw-bold fs-5">
-              jujutsu kaisen <br />
-              tome.7 <br />
-              3.5€
-            </p>
-          </div>
+            <img src="./img/ju.webp" alt="Couverture de jujustu kaisen" height="300" width="300"/>
+            <div class="info-card">
+                <p class="text-center mt-2 p-police fw-bold fs-5">
+                    jujutsu kaisen <br/>
+                    tome.7 <br/>
+                    3.5€
+                </p>
+            </div>
         </div>
         <div class="col-12 col-lg-3 gourde">
-          <img src="./img/gon.webp" alt="Couverture de gon" height="300" width="300"/>
-          <div class="info-card">
-            <p class="text-center mt-2 p-police fw-bold fs-5">
-              Gon <br />
-              tome.2 <br />
-              2.95€
-            </p>
-          </div>
+            <img src="./img/gon.webp" alt="Couverture de gon" height="300" width="300"/>
+            <div class="info-card">
+                <p class="text-center mt-2 p-police fw-bold fs-5">
+                    Gon <br/>
+                    tome.2 <br/>
+                    2.95€
+                </p>
+            </div>
         </div>
-      </div>
     </div>
-    <!--  CONTEND SECTION -----------------------------------  -->
-    <div class="container-fluid px-4 py-5">
-      <h2 class="pb-2 border-bottom text-center p-police fw-semibold fst-italic fs-3">Emanga c'est Simple, Rapide et Sécurisé</h2>
-      <div class="row g-4 py-5 justify-content-center">
+</div>
+<!--  CONTEND SECTION -----------------------------------  -->
+<div class="container-fluid px-4 py-5">
+    <h2 class="pb-2 border-bottom text-center p-police fw-semibold fst-italic fs-3">Emanga c'est Simple, Rapide et
+        Sécurisé</h2>
+    <div class="d-flex g-4 py-5 justify-content-center flex-column flex-md-row">
         <div class="feature col m-3 text-center">
-          <div class="feature-icon ">
-            <i class="bi bi-fire" style="font-size: 5rem;"></i>
-          </div>
-          <h3 class="fs-2 p-police fw-semibold">Vend et Achete au Meilleur Prix !</h3>
-          <p>Tu possedes des mangas que tu ne lis plus ? Tu veux faire de la place pour une nouvelle serie ? Rien de plus simple poste ton annonce, vends et expédis tes mangas en toute simplicité.
-            En lot ou à l'unité c'est super simple 
-            Tu peux même acheter une série déja complete !
-          </p>
+            <div class="feature-icon">
+                <i class="bi bi-chat-quote " style="font-size: 5rem;"></i>
+            </div>
+            <h3 class="fs-2 p-police fw-semibold">Simplicité</h3>
+            <p>100% Sécurisé, rentre ton compte bancaire et effectue des opérations d'achat et vente en temps réel.</p>
         </div>
         <div class="feature col m-3 text-center">
-          <div class="feature-icon">
-            <i class="bi bi-chat-quote " style="font-size: 5rem;"></i>
-          </div>
-          <h3 class="fs-2 p-police fw-semibold">Simplicité</h3>
-          <p>100% Sécurisé, rentre ton compte bancaire et effectue des opérations d'achat et vente en temps réel.</p>
+            <div class="feature-icon ">
+                <i class="bi bi-fire" style="font-size: 5rem;"></i>
+            </div>
+            <h3 class="fs-2 p-police fw-semibold">Vend et Achete au Meilleur Prix !</h3>
+            <p>Tu possedes des mangas que tu ne lis plus ? Tu veux faire de la place pour une nouvelle serie ? Rien de
+                plus simple poste ton annonce, vends et expédis tes mangas en toute simplicité.
+                En lot ou à l'unité c'est super simple
+                Tu peux même acheter une série déja complete !
+            </p>
         </div>
         <div class="feature col m-3 text-center">
-          <div class="feature-icon">
-            <i class="bi bi-discord" style="font-size: 5rem;"></i>
-          </div>
-          <h3 class="fs-2 p-police fw-semibold">Rejoint le Discord Emanga</h3>
-          <p>Pour échanger avec des passionées. <i class="bi bi-emoji-smile-upside-down"></i></p>
+            <div class="feature-icon">
+                <i class="bi bi-discord" style="font-size: 5rem;"></i>
+            </div>
+            <h3 class="fs-2 p-police fw-semibold">Rejoint le Discord Emanga</h3>
+            <p>Pour échanger avec des passionées. <i class="bi bi-emoji-smile-upside-down"></i></p>
         </div>
-      </div>
     </div>
+</div>
 
-    <!--  THIRD SECTION -----------------------------------  -->
-    <div
-      class="container-fluid d-flex justify-content-center align-items-center mt-5"
-    >
-      <p class="p-police fw-semibold fst-italic fs-3 mt-4">Full collection</p>
+<!--  THIRD SECTION -----------------------------------  -->
+<div class="container-fluid d-flex justify-content-center align-items-center mt-5">
+    <p class="p-police fw-semibold fst-italic fs-3 mt-4">Full collection</p>
+</div>
+<div class="container-fluid d-flex justify-content-center m-0 p-0 mt-4 mb-4">
+    <div class="col m-0 p-0 third-galerie-section d-flex justify-content-around align-items-center">
+        <div class="galerie-1 rounded-5 text-center d-flex justify-content-center align-items-center">
+            <p class="text-light p-police fw-bold fst-italic">Naruto</p>
+        </div>
+        <div class="galerie-2 rounded-5 text-center d-flex justify-content-center align-items-center">
+            <p class="text-light p-police fw-bold fst-italic">Demon slayer</p>
+        </div>
+        <div class="galerie-3 rounded-5 text-center d-flex justify-content-center align-items-center">
+            <p class="text-light p-police fw-bold fst-italic">Dragon ball</p>
+        </div>
     </div>
-    <div
-      class="container-fluid d-flex justify-content-center m-0 p-0 mt-4 mb-4"
-    >
-      <div
-        class="col m-0 p-0 third-galerie-section d-flex justify-content-around align-items-center"
-      >
-        <div
-          class="galerie-1 rounded-5 text-center d-flex justify-content-center align-items-center"
-        >
-          <p class="text-light p-police fw-bold fst-italic">Naruto</p>
-        </div>
-        <div
-          class="galerie-2 rounded-5 text-center d-flex justify-content-center align-items-center"
-        >
-          <p class="text-light p-police fw-bold fst-italic">Demon slayer</p>
-        </div>
-        <div
-          class="galerie-3 rounded-5 text-center d-flex justify-content-center align-items-center"
-        >
-          <p class="text-light p-police fw-bold fst-italic">Dragon ball</p>
-        </div>
-      </div>
-    </div>
+</div>
 
 
+<footer>
 
-    <footer>
-
-      <div class="container-fluid  bg-light">
+    <div class="container-fluid  bg-light">
 
         <div class="row footer-height p-4">
-          <div class="col-12 col-lg-4 d-flex justify-content-center">
-            <ul class="list-group list-group-flush">
-              <li
-                class="list-group-item text-decoration-underline fw-semibold fs-5 footer-list"
-              >
-                Payment:
-              </li>
-              <li class="list-group-item fs-5 footer-list">
-                <i class="bi bi-paypal p-1"></i> paypal
-              </li>
-              <li class="list-group-item fs-5 footer-list">
-                <i class="p-1 bi bi-credit-card"></i> visa
-              </li>
-              <li class="list-group-item fs-5 footer-list">
-                <i class="p-1 bi bi-currency-bitcoin"></i> crypto
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 col-lg-4 d-flex justify-content-center">
-            <ul class="list-group list-group-flush">
-              <li
-                class="list-group-item text-decoration-underline fw-semibold fs-5 footer-list"
-              >
-                Livraison:
-              </li>
-              <li class="list-group-item fs-5 footer-list">
-                <i class="bi bi-geo-alt-fill"></i> France
-              </li>
-              <li class="list-group-item fs-5 footer-list">
-                <i class="bi bi-truck"></i> Colissimo
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 col-lg-4 d-flex justify-content-center">
-            <ul class="list-group list-group-flush">
-              <li
-                class="list-group-item text-decoration-underline fw-semibold fs-5 footer-list"
-              >
-                CGV / Contact:
-              </li>
-              <li class="list-group-item fs-5 footer-list">
-                <i class="bi bi-file-earmark-medical"></i> Nos conditions
-              </li>
-              <li class="list-group-item fs-5 footer-list">
-                <i class="bi bi-telephone-fill"></i> 00 00 00 00 00
-              </li>
-              <li class="list-group-item fs-5 footer-list">
-                <i class="bi bi-envelope-fill"></i> emanga@web-master.fr
-              </li>
-            </ul>
-          </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-decoration-underline fw-semibold fs-5 footer-list">
+                        Payment:
+                    </li>
+                    <li class="list-group-item fs-5 footer-list">
+                        <i class="bi bi-paypal p-1"></i> paypal
+                    </li>
+                    <li class="list-group-item fs-5 footer-list">
+                        <i class="p-1 bi bi-credit-card"></i> visa
+                    </li>
+                    <li class="list-group-item fs-5 footer-list">
+                        <i class="p-1 bi bi-currency-bitcoin"></i> crypto
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-decoration-underline fw-semibold fs-5 footer-list">
+                        Livraison:
+                    </li>
+                    <li class="list-group-item fs-5 footer-list">
+                        <i class="bi bi-geo-alt-fill"></i> France
+                    </li>
+                    <li class="list-group-item fs-5 footer-list">
+                        <i class="bi bi-truck"></i> Colissimo
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-decoration-underline fw-semibold fs-5 footer-list">
+                        CGV / Contact:
+                    </li>
+                    <li class="list-group-item fs-5 footer-list">
+                        <i class="bi bi-file-earmark-medical"></i> Nos conditions
+                    </li>
+                    <li class="list-group-item fs-5 footer-list">
+                        <i class="bi bi-telephone-fill"></i> 00 00 00 00 00
+                    </li>
+                    <li class="list-group-item fs-5 footer-list">
+                        <i class="bi bi-envelope-fill"></i> emanga@web-master.fr
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </footer>
-    <script type="module" src="./main.js"></script>
-  </body>
+    </div>
+</footer>
+<script type="module" src="./main.js"></script>
+</body>
 </html>
